@@ -1,59 +1,30 @@
-let nama = 'Farhan M'; // Tambahkan baris ini dan ganti "Nama Anda" dengan nama yang sebenarnya
-let usia = 27; // Tipe integer
-let tinggiBadan = 175.4; // Tipe double float
-let beratBadan; // Diinisialisasi sebagai null, dapat diisi nanti
-let pacar = 5; // Diatur ke null, berarti tidak ada nilai saat ini
+// Belajar DOM
+document.title = `Nura Syah Ilma`
+const body = document.body
 
-beratBadan = 68;
 
-// TODO : Contoh penggunaan switch
-// switch(pacar){
-//     case 1:
-//     pacar = "Saya sudah punya istri";
-//     break
-//     case 2:
-//     pacar = "Saya sudah punya pacar";
-//     break
-//     default:
-//     pacar = "Saya Jomblo";
-//     break
-// }
-// TODO : Batas switch
+// Jika menggunakan id ketika pemanggilanya menggunakan "#"
+const btn1 = document.getElementById('btn1');
+// Jika menggunakan class ketika pemanggilanya menggunakan "."
+const btn2 = document.querySelector('.btn2');
+let defaultText = "Klik Cuy";
+btn1.textContent = defaultText;
 
-if (pacar == null) {
-    pacar = "Punya istri"
-} else {
-    pacar = "Jomblo"
+function clickButton() {
+    btn1.style.background = 'aqua';
+    const newText = document.createElement('p');
+    newText.textContent = 'Hallo Apa kabar cuy';
+    body.append(newText);
+}
+function ubahText() {
+    btn1.textContent = 'uhuuy bisa berubah';
 }
 
-
-let saldoAWal = 50000;
-let saldoTambahan;
-
-// Menggunakan template literal dengan backtick dan ${} untuk penyisipan variabel
-// alert(`Nama saya ${nama}, usia saya ${usia}, dan tinggi badan saya ${tinggiBadan} cm lalu berat badan saya ${beratBadan} dan status saya ${pacar}`);
-// alert(`Saldo di rekening saya ${saldoAWal}`);
-
-// saldoTambahan = prompt('Ketikkan Tambahan Saldo');
-
-// Konversi saldoTambahan dari string ke integer
-// saldoTambahan = parseInt(saldoTambahan);
-
-// Pengecekan dan perhitungan saldo
-// if(saldoTambahan) {
-//     let hasil = saldoAWal + saldoTambahan;
-//     alert(`Hasil saldo Akhir ${hasil}`);
-// } else {
-//     alert(`Data kosong`);
-// }
-
-const hariDalamSeminggu = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-
-// Mengambil nilai numerik hari saat ini
-let indexHari = new Date().getDay();
-
-// Mendapatkan nama hari berdasarkan index dari array
-let namaHari = hariDalamSeminggu[indexHari];
-
-// Menampilkan nama hari ke konsol
-console.log(namaHari);
+function oriText() {
+    btn1.textContent;
+}
+btn1.style.border = 'none';
+btn1.style.padding = '8px';
+btn1.style.background = 'green';
+btn1.style.fontSize = '10px';
+btn1.style.color = 'white';
