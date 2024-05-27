@@ -9,7 +9,7 @@
 
 # Includes
 
-<span class= "merah">Includes</span> alam JavaScript adalah metode yang digunakan untuk memeriksa apakah suatu <span class = "merah">array</span> atau string berisi nilai tertentu. Metode ini mengembalikan nilai boolean (true atau false). Tergantung pada konteksnya, includes dapat digunakan pada array atau string.
+<span class= "merah">Includes</span> dalam JavaScript adalah metode yang digunakan untuk memeriksa apakah suatu <span class = "merah">array</span> atau string berisi nilai tertentu. Metode ini mengembalikan nilai boolean (true atau false). Tergantung pada konteksnya, includes dapat digunakan pada array atau string.
 ## Menggunakan includes dengan Array
 Metode includes pada array digunakan untuk memeriksa apakah suatu array berisi elemen tertentu. Sintaksnya adalah:
 
