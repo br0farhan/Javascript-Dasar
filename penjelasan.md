@@ -235,3 +235,4 @@ salesArray.filter((x) => x.umur > 28).forEach((x) => console.log(x));
 ```java
 { nama: 'Andi', umur: 30, tempat_tinggal: 'Jakarta' }
 ```
+
